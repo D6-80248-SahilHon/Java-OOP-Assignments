@@ -1,0 +1,27 @@
+package com.employee;
+
+import java.util.Scanner;
+
+public class SalariedEmployee extends Employee {
+	private double hourlyWage;
+	private float hoursWorked;
+	
+	
+public SalariedEmployee() {
+		
+		this(0,0);
+	}
+	
+	public SalariedEmployee(double hourlyWage, float hoursWorked) {
+		
+		this.hourlyWage = hourlyWage;
+		this.hoursWorked = hoursWorked;
+	}
+	
+	private void accept() {
+		Scanner
+
+	}
+	
+	
+}

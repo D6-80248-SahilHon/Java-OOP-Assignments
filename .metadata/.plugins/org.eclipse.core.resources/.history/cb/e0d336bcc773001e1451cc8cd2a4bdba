@@ -1,0 +1,38 @@
+import java.util.Scanner;
+
+public class HourlyEmployee extends Employee {
+	private double hourlyWage;
+	private float hoursWorked;
+	
+	
+public SalariedEmployee() {
+		
+		this(0,0);
+	}
+	
+	public SalariedEmployee(double hourlyWage, float hoursWorked) {
+		
+		this.hourlyWage = hourlyWage;
+		this.hoursWorked = hoursWorked;
+	}
+	
+	@Override
+	public void accept() {
+		// TODO Auto-generated method stub
+		super.accept();
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the Hourly wage:");
+		this.hourlyWage=sc.nextDouble();
+		System.out.println("Enter the number of hours worked:");
+		this.hoursWorked=sc.nextFloat();
+		
+	}
+
+	@Override
+	public String toString() {
+		return  super.toString()+ "SalariedEmployee [hourlyWage=" + hourlyWage + ", hoursWorked=" + hoursWorked + ", toString()=";
+	}
+	
+	
+	
+}

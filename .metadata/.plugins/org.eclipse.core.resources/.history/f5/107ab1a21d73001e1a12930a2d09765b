@@ -1,0 +1,36 @@
+package calculator;
+
+import java.util.Scanner;
+
+public class TestCalculation {
+	public int menu() {
+		
+		System.out.println("Enter the choice");
+		System.out.println("0.EXIT");
+		System.out.println("1.ACCEPT DATA");
+		System.out.println("2.CHECK LIMIT");
+		return new Scanner(System.in).nextInt();	
+	}
+
+	public static void main(String[] args) {
+		int choice;
+		int accountNo=0;
+		CreditAccount a=new CreditAccount();
+		
+		while((choice=menu())!=0) {
+			switch (choice) {
+			case 0:
+				break;
+			case 1:a.acceptData();
+					break;
+			case 2:a.displayData();
+					break;
+			default:System.out.println("Enter the correct choice");
+				break;
+			}
+		}
+		
+		
+	}
+
+}

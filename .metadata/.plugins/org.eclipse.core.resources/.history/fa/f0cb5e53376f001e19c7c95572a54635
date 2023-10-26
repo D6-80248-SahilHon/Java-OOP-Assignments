@@ -1,0 +1,42 @@
+
+public class Pattern_2 {
+
+	public static void main(String[] args) {
+		 int height=5;
+	        
+	        
+	        for(int i=1;i<=height;i++)
+	        {
+	        	for(int j=0;j<=height-i;j++)
+	        	{
+	        		System.out.print(" ");
+	        		
+	        	}
+	        	for(int k=1;k<=i;k++)
+	        	{
+	        		System.out.print("* ");
+	        	}
+	            System.out.println();
+	            if(i==5)
+	            {
+	            	for(int p=1;p<=height;p++)
+	    	        {
+	    	        	
+	    	        	for(int r=1;r<p;r++)
+	    	        	{
+	    	        		System.out.print(" ");
+	    	        	}
+	    	        	for(int q=0;q<=height-p;q++)
+	    	        	{
+	    	        		System.out.print("* ");
+	    	        		
+	    	        	}
+	    	            System.out.println();
+	    	        }
+	            }
+		}
+
+
+	}
+
+}
